@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0b1019;
+    color: #d6dce8;
+    font-family: 'DM Sans', Arial, sans-serif;
+    line-height: 1.8;
+    min-height: 100vh;
+}
+
+
+header {
+    text-align: center;
+    padding: 65px 20px 50px;
+    background: linear-gradient(135deg, #1a2940, #0b1019, #18263b);
+    border-bottom: 1px solid #293950;
+}
+
+header h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(28px, 5vw, 46px);
+    font-weight: 400;
+    color: #e3ebfa;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #91a2bd;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 18px;
+    background: #0e1521;
+    border-bottom: 1px solid #263348;
+}
+
+nav a {
+    color: #9baac0;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 9px 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+    background: #263851;
+}
+
+
+main {
+    width: 90%;
+    max-width: 850px;
+    margin: 55px auto;
+    padding: 40px;
+    background: #111a28;
+    border: 1px solid #253247;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #c7d8f4;
+    margin: 25px 0 15px;
+}
+
+main h2:first-child {
+    margin-top: 0;
+}
+
+p {
+    color: #a6b1c3;
+    margin-bottom: 18px;
+}
+
+b {
+    color: #dce7fb;
+}
+
+
+.profile {
+    display: block;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+    border: 3px solid #526c92;
+    box-shadow: 0 0 25px rgba(106, 143, 198, 0.2);
+}
+
+
+.content-image {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    max-height: 350px;
+    object-fit: cover;
+    margin: 0 auto 30px;
+    border-radius: 8px;
+    border: 1px solid #34445d;
+}
+
+
+ul, ol {
+    padding-left: 25px;
+    margin: 15px 0 25px;
+}
+
+li {
+    color: #aab7cb;
+    padding: 8px 0;
+}
+
+li::marker {
+    color: #829fc9;
+}
+
+
+main a {
+    color: #9dbcf0;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+main a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+.button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 12px 23px;
+    border: 1px solid #627da8;
+    border-radius: 5px;
+    color: #dce7fb;
+    background: transparent;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+main a.button:hover {
+    background: #627da8;
+    color: #0b1019;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+song-button {
+	display: inline-block;
+	margin-top: 25px
+	padding: 14px 25px
+	
+
+	background: transparent;
+	border: 1px solid #627da8;
+	color: #a9c6ff;
+	
+	font family: 'DM Sans', sans-serif
+	font size: 13px
+	letter-spacing: 1px
+	text-decoration: none;
+	
+	border-radius: 4px;
+	transition: all 0.3s ease;
+}
+
+main asong-button:hover {
+	background: rgba(98, 125, 168, 0.15):
+	border-color: @a9c6ff;
+	color: #e0e8f7;
+	
+	box-shadow: 0 0 15px rgba(141, 168, 214, 0.2):
+	transform: translateY(-3px);
+}
+
+
+footer {
+    text-align: center;
+    padding: 25px 15px;
+    background: #0e1521;
+    border-top: 1px solid #263348;
+}
+
+footer p {
+    margin: 0;
+    color: #75849b;
+    font-size: 12px;
+}
+
+
+@media (max-width: 600px) {
+    header {
+        padding: 45px 15px 35px;
+    }
+
+    nav {
+        gap: 4px;
+        padding: 12px 8px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    main {
+        width: 92%;
+        margin: 30px auto;
+        padding: 23px 18px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .profile {
+        width: 145px;
+        height: 145px;
+    }
+}
